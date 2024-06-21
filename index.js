@@ -35,7 +35,7 @@ const iniciarSesion = ()=>{
 
 
 let options = {
-  threshold: [0, 1],
+  threshold: 1,
 };
 
 const handleIntersect = entries => {
@@ -102,7 +102,17 @@ const triggerAnimationInit = ()=>{
 const clickMap = ()=>{
 	alert("Trabajo en proceso, regresa mas tarde");
 }
-initSetup();
+
+if (window.innerWidth> 0 && window.innerWidth < 700) {
+  document.getElementById("container").innerHTML = `<section class="firstSection">
+  		<img  id="init_logo" class="logoSmall" src="./assets/logo_w.png"/>
+			<h1 id="init_title" class="phoneTitle title" style="padding: 0 1vw; text-align: center;">Esta pagina esta hecha para ser vista en una computadora</h1>
+
+			</section>`;
+}else{
+	initSetup();
+}
+
 
 /*
 <div class="loaderCard">

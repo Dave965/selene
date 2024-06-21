@@ -130,6 +130,13 @@ p{
 	opacity: 1;
 }
 
+.logoSmall{
+	width: 30vw;
+}
+
+.phoneTitle{
+	font-size: 6vw;
+}
 .init_title{
 	background-color: #0b0510;
 }
