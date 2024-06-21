@@ -35,7 +35,7 @@ const iniciarSesion = ()=>{
 
 
 let options = {
-  threshold: 1,
+  threshold: [0, 1],
 };
 
 const handleIntersect = entries => {
@@ -45,7 +45,6 @@ const handleIntersect = entries => {
     	let backgroundNum = targetId[targetId.length-1];
 
     	document.getElementById("body").className="background"+backgroundNum;
-
     	document.getElementById("content_page_"+backgroundNum).classList.remove("show");
     	document.getElementById("refp"+backgroundNum).classList.remove("show");
 
@@ -67,6 +66,7 @@ const handleIntersect = entries => {
 					}
 				}
 				document.getElementById("init_logo").src = "./assets/logo_w.png";
+
     	}
     }
   });

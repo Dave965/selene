@@ -56,20 +56,42 @@ body{
   position: relative;
 }
 
-a{
+a, lu {
 	color: white;
 	font-family: "Baskervville", serif;
-  font-weight: bold;
+	font-weight: 400;
   font-style: normal;
-  text-decoration: none;
   transition: all 700ms;
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+p{
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+  font-style: normal;
+  margin: 2vh 0 ;
+  transition: all 700ms;
+}
+
+.subtitle{
+	font-size: 2vw;
+}
+
+.bigText{
+	line-height: 65%;
+	font-size: 5vw;
 }
 
 .btn_login{
 	position: absolute;
 	color: white;
-	top: 25px;
-	right: 40px;
+	top: 12px;
+	right: 50px;
 	border-radius: 9999px;
 	aspect-ratio: 1;
 	font-size: 35px;
@@ -83,7 +105,7 @@ a{
 }
 
 .section_title{
-	font-size: 5vw;
+	font-size: 3vw;
 }
 
 .header{
@@ -99,7 +121,7 @@ a{
 }
 
 .top{
-	height: 8vh;
+	height: 10vh;
 }
 
 .navbar_logo{
@@ -122,6 +144,10 @@ section{
 	height: 100vh;
 	justify-content: center;
 	align-items: center;
+}
+
+.firstSection{
+	margin-bottom: 18vh;
 }
 
 .playAnim{
@@ -191,14 +217,10 @@ section{
 	opacity: 1;
 }
 
-.firstTop{
-	padding: 10vh 40px;
-}
-
 
 .contentWrapper{
 	display: flex;
-	height: 90%;
+	height: 100%;
 	width: 100%;
 	position: relative;
 }
@@ -213,11 +235,20 @@ section{
 	padding: 0 2vw;
 }
 
-#content_page_1{
-	background-image: url('./assets/walkAlone.jpg');
-	background-size: cover;
+.leftPanelWrapper{
+	flex:1;
+	display: flex;
+	gap: 5vh;
+	flex-direction: column;
+	justify-content: center;
 }
 
+.rightPanelWrapper{
+	flex:1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 .mapWrapper{
 	flex:2;
@@ -278,6 +309,10 @@ input{
 	width: 60%;
 	border-radius: 30px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.problemImage{
+	width: 90%;
 }
 
 .loaderCard{
