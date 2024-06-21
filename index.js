@@ -51,6 +51,7 @@ const handleIntersect = entries => {
     	document.getElementById("refp"+backgroundNum).classList.remove("show");
 
     	if(backgroundNum == 6){
+    		localStorage.setItem("viewed", true);
     		var all = document.getElementsByTagName("*");
 				for (var i=0, max=all.length; i < max; i++) {
 					if(all[i].tagName == "H1" || all[i].tagName == "A" || all[i].tagName == "I"){
@@ -110,14 +111,18 @@ const clickMap = ()=>{
 if (window.navigator.userAgent.toLowerCase().includes("mobi")) {
   document.getElementById("container").innerHTML = `<section class="firstSection">
   		<img  id="init_logo" class="logoSmall" src="./assets/logo_w.png"/>
-			<h1 id="init_title" class="phoneTitle title" style="padding: 0 1vw; text-align: center;">Esta pagina esta hecha para ser vista en una computadora</h1>
-
+			<h1 id="init_title" class="phoneTitle title" style="padding: 0 1vw; text-align: center; width: 80%;">Esta pagina esta hecha para ser vista en una computadora, guarda el link para verla mas tarde</h1>
+			<button class="submitbtn" style="margin-top: 2vh" onclick="copiar()">Copiar link</button>
 			</section>`;
 }else{
 	initSetup();
 }
 
 
+let copiar = ()=>{
+	navigator.clipboard.writeText("dave965.github.io/selene");
+	alert("Link copiado, guárdalo bien");
+}
 /*
 <div class="loaderCard">
 							<div class="loader"></div>
