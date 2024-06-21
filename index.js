@@ -19,6 +19,8 @@ const initSetup = async ()=>{
 			page.classList.toggle("hidden");
 			otherpages.classList.toggle("hidden");
 
+			document.getElementById("content_sel_1").scrollIntoView();
+
 			document.getElementById("btn_login").classList.remove("show");
 
 			for(let i=1;i<7;i++){
@@ -83,6 +85,8 @@ const loadFirstPage = async ()=>{
 	let page = document.getElementById("content_page_1");
 	page.classList.toggle("hidden");
 	otherpages.classList.toggle("hidden");
+	document.getElementById("content_sel_1").scrollIntoView();
+
 }
 
 const triggerAnimationInit = ()=>{

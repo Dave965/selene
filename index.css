@@ -18,6 +18,8 @@ body{
 
 .background0{
 	background-color: #0b0510;
+	overflow: hidden;
+	height: 100vh;
 }
 
 .background1{
@@ -172,7 +174,7 @@ section{
 	align-items: center;
 }
 
-.section_1, .section_5{
+.section_1, .section_4, .section_5{
 	margin-bottom: 18vh;
 }
 
@@ -191,17 +193,17 @@ section{
 
 	12%{
 		opacity: 1;
-		transform: translateY(47vh) translateX(40px) scaleX(1);
+		transform: translateY(47vh) translateX(40px)  scaleX(1);
 	}
 
 	50%{
 		opacity: 1;
-		transform: translateY(47vh) translateX(40px) scale(3);
+		transform: translateY(47vh)  translateX(40px)  scale(3);
 	}
 
 	70%{
 		opacity: 1;
-		transform: translateY(47vh) translateX(40px) scale(3);
+		transform: translateY(47vh) translateX(40px)  scale(3);
 	}
 
 	100%{
@@ -274,7 +276,7 @@ section{
 	padding-top: 22vh;
 }
 
-.textWrapper{
+.textWrapper, .inputWrapper2{
 	flex:1;
 	display: flex;
 	flex-direction: column;
@@ -288,7 +290,7 @@ section{
 }
 
 input{
-	font-family: "Baskervville", serif;
+	font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-style: normal;
   transition: all 700ms;
@@ -304,9 +306,29 @@ input{
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
+textarea{
+	font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  transition: all 700ms;
+	color: #251036;
+	resize: none;
+
+	font-size: 3vh;
+
+	border: none;
+	width: 50%;
+	height: 20vh;
+	border-radius: 10px;
+	background-color: white;
+	padding: 1vh 2vw;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+}
+
 .submitbtn{
 	color: white;
-	font-family: "Baskervville", serif;
+	font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-style: normal;
   transition: all 700ms;
@@ -335,7 +357,7 @@ input{
 
 .btnCompra{
 	color: #3f1b5c;
-	font-family: "Baskervville", serif;
+	font-family: "Montserrat", serif;
   font-weight: bold;
   font-style: normal;
   transition: all 700ms;
@@ -359,6 +381,22 @@ input{
 	background-color: #fff;
 	color: #3f1b5c;
 	transition: background-color 5ms;
+}
+
+.btnDenuncia{
+	color: #3f1b5c;
+	font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  transition: all 700ms;
+  font-size: 3vh;
+  text-align: center;
+	border: none;
+	width: 40%;
+	border-radius: 900px;
+	background-color: #ffd7fb;
+	padding: 1vh 2vw;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 
