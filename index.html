@@ -30,7 +30,7 @@
 				El problema
 			</a>
 			<a id="refp3" class="show" href="#content_sel_3">
-				¿Qué Ofrecemos?
+				¿Cómo lo hacemos?
 			</a>
 			<a id="refp5" class="show" href="#content_sel_5">
 				Planea tu ruta
@@ -40,7 +40,7 @@
 			</button>
 		</div>
 
-		<section class="firstSection">
+		<section class="section_1">
 			<h1 id="init_title" class="init_title title" onclick="triggerAnimationInit()">Selene</h1>
 			<div id="content_sel_1"></div>
 			<div id="content_page_1" class="page show hidden firstTop">
@@ -48,7 +48,7 @@
 					<div class="leftPanelWrapper">
 						<div>
 							<h1 id="content_title_1" class="title section_title">73.4% de las mujeres en Mexico</h1>
-							<p class="subtitle">se sintieron inseguras al caminar solas por <br> su localidad durante la noche.</p>
+							<p class="subtitle">se han sentido inseguras al caminar solas por <br> su localidad durante la noche.</p>
 						</div>
 
 						<h1 class="title section_title">No vuelvas a salir <br> <span class="bigText">con miedo.</span></h1>
@@ -62,17 +62,50 @@
 		</section>
 
 		<div id="other_pages" class="hidden">
-			<section>
+			<section class="section_2">
 				<div id="content_sel_2" class="top"></div>
 				<div id="content_page_2" class="page show">
-					<h1 id="content_title_2" class="title section_title">Nuestra Misión</h1>
+					
+					<div class="contentWrapper">
+						<div class="textWrapper">
+							<h1 id="content_title_2" class="title section_title">La solución</h1>
+							<p class="normalText justified centered p5">Somos <b>Selene</b>, una aplicación móvil creada para proporcionarte tranquilidad en casa paso que des.</p>
+							<lu class="p5 list normalText">
+								<li>Lista zonas seguras cerca de ti.</li>
+								<li>Alerta de incidentes en tiempo real.</li>
+								<li>Comparte tu ubicación en todo momento.</li>
+								<li>Genera la ruta más segura a tu destino.</li>
+								<li>Botón de emergencia que alerta a las personas a tu alrededor.</li>
+							</lu>
+						</div>
+
+						<div class="mapWrapper">
+							<img class="phoneImg" src="./assets/phoneApp.png"/>
+						</div>
+					</div>
 				</div>
 			</section>
 
 			<section>
 				<div id="content_sel_3" class="top"></div>
 				<div id="content_page_3" class="page show">
-					<h1 id="content_title_3" class="title section_title">¿Qué Ofrecemos?</h1>
+					
+					<div class="contentWrapper">
+						<div class="textWrapper">
+							<h1 id="content_title_3" class="title section_title noMargin">¿Cómo lo hacemos?</h1>
+							<lu class="p5 list justified normalText">
+								<li><b>Ecosistema exclusivamente de mujeres para mujeres</b>, formarás parte de una comunidad a la que le importa tanto su seguridad como la tuya.</li>
+								<li>Ayuda de colectivos feministas qué brindan la ubicación de <b>zonas seguras con atención 24/7.</b></li>
+								<li> ¿Te interesa? <b>Únete a Selene por solo $5 al mes</b> y deja que nosotros nos encarguemos de tu seguridad, para que tú puedas concentrarte en llegar a donde quieras.</li>
+							</lu>
+							<button class="btnCompra" onclick="clickMap()">Reserva ya</button>
+						</div>
+
+						<div class="mapWrapper">
+							<img class="talkImg" src="./assets/talking.png"/>
+						</div>
+					</div>
+
 				</div>
 			</section>
 
@@ -83,13 +116,12 @@
 				</div>
 			</section>
 
-			<section>
+			<section class="section_5">
 				<div id="content_sel_5" class="top"></div>
 				<div id="content_page_5" class="page show">
-					<h1 id="content_title_5" class="title section_title">Planea tu ruta</h1>
-
 					<div class="contentWrapper">
 						<div class="inputWrapper">
+							<h1 id="content_title_5" class="title section_title noMargin">Planea tu ruta</h1>
 							<input placeholder="¿Dónde estás?"></input>
 							<input placeholder="¿A dónde vas?"></input>
 							<button class="submitbtn" onclick="clickMap()">Ir</button>
@@ -106,6 +138,7 @@
 				<div id="content_sel_6" class="top"></div>
 				<div id="content_page_6" class="page show">
 					<h1 id="content_title_6" class="title section_title">Contáctanos</h1>
+					<a href="https://storyset.com/people">People illustrations by Storyset</a>
 				</div>
 			</section>
 		</div>
