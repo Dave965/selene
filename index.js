@@ -103,7 +103,7 @@ const clickMap = ()=>{
 	alert("Trabajo en proceso, regresa mas tarde");
 }
 
-if ( window.orientation > 1) {
+if (window.navigator.userAgent.toLowerCase().includes("mobi")) {
   document.getElementById("container").innerHTML = `<section class="firstSection">
   		<img  id="init_logo" class="logoSmall" src="./assets/logo_w.png"/>
 			<h1 id="init_title" class="phoneTitle title" style="padding: 0 1vw; text-align: center;">Esta pagina esta hecha para ser vista en una computadora</h1>
