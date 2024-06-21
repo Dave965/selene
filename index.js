@@ -109,14 +109,16 @@ const clickMap = ()=>{
 }
 
 if (window.navigator.userAgent.toLowerCase().includes("mobi")) {
-  document.getElementById("container").innerHTML = `<section class="firstSection">
+  /*document.getElementById("container").innerHTML = `<section class="firstSection">
   		<img  id="init_logo" class="logoSmall" src="./assets/logo_w.png"/>
 			<h1 id="init_title" class="phoneTitle title" style="padding: 0 1vw; text-align: center; width: 80%;">Esta pagina esta hecha para ser vista en una computadora, guarda el link para verla mas tarde</h1>
 			<button class="submitbtn" style="margin-top: 2vh" onclick="copiar()">Copiar link</button>
-			</section>`;
+			</section>`;*/
 }else{
-	initSetup();
+	
 }
+
+initSetup();
 
 
 let copiar = ()=>{
