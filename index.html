@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./index.css">
+	<script src="https://kit.fontawesome.com/e0c1d773ff.js" crossorigin="anonymous"></script>
+	<title></title>
+</head>
+<body id="body" class="background0">
+	<div id='container'>
+		<div id="header" class="header">
+			<a id="refp6" class="show" href="#content_sel_6">
+				Contáctanos
+			</a>
+			<a id="refp4" class="show" href="#content_sel_4">
+				Denuncias
+			</a>
+			<a id="refp2" class="show" href="#content_sel_2">
+				Nuestra Misión
+			</a>
+			<a href="#content_sel_1">
+				<img  id="init_logo" class="navbar_logo" src="./assets/logo_w.png"/>
+			</a>
+			<a id="refp1" class="show" href="#content_sel_1">
+				El problema
+			</a>
+			<a id="refp3" class="show" href="#content_sel_3">
+				¿Qué Ofrecemos?
+			</a>
+			<a id="refp5" class="show" href="#content_sel_5">
+				Planea tu ruta
+			</a>
+			<button id="btn_login" class="btn_login show" onclick="iniciarSesion()">
+				<i class="fa-solid fa-user"></i>
+			</button>
+		</div>
+
+		<section>
+			<h1 id="init_title" class="init_title title" onclick="triggerAnimationInit()">Selene</h1>
+			<div id="content_sel_1"></div>
+			<div id="content_page_1" class="page show hidden firstTop">
+				<h1 id="content_title_1" class="title section_title">90% de las mujeres en Mexico</h1>
+				<div class="contentWrapper">
+					<div class="inputWrapper">
+						<input placeholder="¿Dónde estás?"></input>
+						<input placeholder="¿A dónde vas?"></input>
+						<button class="submitbtn" onclick="clickMap()">Ir</button>
+					</div>
+
+					<div class="mapWrapper">
+						<div class="problemImg"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="other_pages" class="hidden">
+			<section>
+				<div id="content_sel_2" class="top"></div>
+				<div id="content_page_2" class="page show">
+					<h1 id="content_title_2" class="title section_title">Nuestra Misión</h1>
+				</div>
+			</section>
+
+			<section>
+				<div id="content_sel_3" class="top"></div>
+				<div id="content_page_3" class="page show">
+					<h1 id="content_title_3" class="title section_title">¿Qué Ofrecemos?</h1>
+				</div>
+			</section>
+
+			<section>
+				<div id="content_sel_4" class="top"></div>
+				<div id="content_page_4" class="page show">
+					<h1 id="content_title_4" class="title section_title">Denuncias</h1>
+				</div>
+			</section>
+
+			<section>
+				<div id="content_sel_5" class="top"></div>
+				<div id="content_page_5" class="page show">
+					<h1 id="content_title_5" class="title section_title">Planea tu ruta</h1>
+
+					<div class="contentWrapper">
+						<div class="inputWrapper">
+							<input placeholder="¿Dónde estás?"></input>
+							<input placeholder="¿A dónde vas?"></input>
+							<button class="submitbtn" onclick="clickMap()">Ir</button>
+						</div>
+
+						<div class="mapWrapper">
+							<img class="mapImg" src="./assets/map.png"/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div id="content_sel_6" class="top"></div>
+				<div id="content_page_6" class="page show">
+					<h1 id="content_title_6" class="title section_title">Contáctanos</h1>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+<script src="index.js"></script>
+</html>

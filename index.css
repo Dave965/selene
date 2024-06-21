@@ -1,0 +1,317 @@
+* {
+ user-select: none;
+}
+html{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	transition: all 700ms;
+}
+
+.background0{
+	background-color: #0b0510;
+}
+
+.background1{
+	background-color: #0b0510;
+}
+
+.background2{
+	background-color: #251036;
+}
+
+.background3{
+	background-color: #3f1b5c;
+}
+
+.background4{
+	background-color: #662d91;
+}
+
+.background5{
+	background-color: #ccacc8;
+}
+
+.background6{
+	background-color: #ffd7fb;
+}
+
+
+.title{
+	color: white;
+	font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10vw;
+ 	margin-top: 0;
+ 	margin-bottom: 0;
+  position: relative;
+}
+
+a{
+	color: white;
+	font-family: "Baskervville", serif;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  transition: all 700ms;
+}
+
+.btn_login{
+	position: absolute;
+	color: white;
+	top: 25px;
+	right: 40px;
+	border-radius: 9999px;
+	aspect-ratio: 1;
+	font-size: 35px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.0);
+	transition: all 700ms;
+}
+
+.btn_login:hover{
+	cursor: pointer;
+}
+
+.section_title{
+	font-size: 5vw;
+}
+
+.header{
+	position: sticky;
+	top: 0;
+	display: flex;
+	gap: 5%;
+	justify-content: center;
+	align-items: center;
+	padding: 1vh 0vh;
+	z-index: 2;
+	backdrop-filter: blur(10px);
+}
+
+.top{
+	height: 8vh;
+}
+
+.navbar_logo{
+	width: 3vw;
+	transform: translateY(47vh) translateX(40px) scaleX(0);
+	opacity: 1;
+}
+
+.init_title{
+	background-color: #0b0510;
+}
+
+.init_title:hover{
+	cursor: pointer;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.playAnim{
+	animation: initTitle 0.5s ease-in-out forwards;
+}
+
+.logoPlayAnim{
+	animation: initLogo 2s ease-in-out forwards;
+}
+
+@keyframes initLogo{
+	10%{
+		opacity: 0;
+	}
+
+	12%{
+		opacity: 1;
+		transform: translateY(47vh) translateX(40px) scaleX(1);
+	}
+
+	50%{
+		opacity: 1;
+		transform: translateY(47vh) translateX(40px) scale(3);
+	}
+
+	70%{
+		opacity: 1;
+		transform: translateY(47vh) translateX(40px) scale(3);
+	}
+
+	100%{
+		transform: scale(1);
+	}
+}
+
+@keyframes initTitle{
+	0%{
+
+	}
+
+	80%{
+		opacity: 1;
+	}
+
+	90%{
+		transform: scaleX(0);
+		display: block;
+	}
+
+	92%{
+		opacity: 0;
+		display: none;
+	}
+
+	100%{
+		display: none;
+	}
+}
+
+.page{
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	height: 100%;
+	padding: 0 40px;
+	transition: all 2s;
+	opacity: 1;
+}
+
+.firstTop{
+	padding: 10vh 40px;
+}
+
+
+.contentWrapper{
+	display: flex;
+	height: 90%;
+	width: 100%;
+	position: relative;
+}
+
+.inputWrapper{
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 8vh;
+	padding: 0 2vw;
+}
+
+#content_page_1{
+	background-image: url('./assets/walkAlone.jpg');
+	background-size: cover;
+}
+
+
+.mapWrapper{
+	flex:2;
+}
+
+input{
+	font-family: "Baskervville", serif;
+  font-weight: bold;
+  font-style: normal;
+  transition: all 700ms;
+	color: #251036;
+
+	font-size: 3vh;
+
+	border: none;
+	width: 60%;
+	border-radius: 900px;
+	background-color: white;
+	padding: 1vh 2vw;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.submitbtn{
+	color: white;
+	font-family: "Baskervville", serif;
+  font-weight: bold;
+  font-style: normal;
+  transition: all 700ms;
+  font-size: 3vh;
+  text-align: center;
+	border: none;
+	width: 60%;
+	border-radius: 900px;
+	background-color: #3f1b5c;
+	padding: 1vh 2vw;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.submitbtn:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+	transition: background-color 5ms transform 500ms;
+}
+
+.submitbtn:active{
+	background-color: #fff;
+	color: #3f1b5c;
+	transition: background-color 5ms;
+}
+
+.mapWrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mapImg{
+	width: 60%;
+	border-radius: 30px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.loaderCard{
+	position: absolute;
+	left: 45%;
+	top: 30%;
+
+	background-color: white;
+	width: 40vw;
+}
+
+.loader {
+  border: 20px solid #ffd7fb; /* Light grey */
+  border-top: 20px solid #3f1b5c; /* Blue */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 2s cubic-bezier(0.34, 0.1, 0.38, 0.68) infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+.show{
+	display: flex;
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+.hidden{
+	display: none;
+	opacity: 0;
+}
