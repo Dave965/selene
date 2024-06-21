@@ -291,7 +291,6 @@ section{
 
 input{
 	font-family: "Montserrat", sans-serif;
-  font-weight: bold;
   font-style: normal;
   transition: all 700ms;
 	color: #251036;
@@ -308,7 +307,6 @@ input{
 
 textarea{
 	font-family: "Montserrat", sans-serif;
-  font-weight: bold;
   font-style: normal;
   transition: all 700ms;
 	color: #251036;
@@ -417,7 +415,7 @@ textarea{
 	width: 90%;
 }
 
-.phoneImg{
+.phoneImg, .contactImg{
 	height: 80%;
 }
 
